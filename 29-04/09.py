@@ -1,7 +1,7 @@
 #- Faça um algoritmo que calcule o IMC (Índice de Massa Corporal) de uma pessoa, leia o seu peso e sua altura e imprima na tela sua condição de acordo com a tabela abaixo:
 altura = float(input('Insira sua altura em metros (exemplo: 1.80): '))
 peso =  float(input('Insira seu peso: '))
-imc = "{:.2f}".format(peso/(altura*altura))
+imc = float("{:.2f}".format(peso/(altura*altura)))
 
 if imc < 18.5:
     print('Seu imc é:', imc,'. Você está abaixo do peso')
